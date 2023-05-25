@@ -2,6 +2,7 @@ package stepdefinitions;
 
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
+import org.openqa.selenium.NoSuchElementException;
 import pages.HerokuPage;
 
 public class HerokuappStepDefinitions {
@@ -32,9 +33,9 @@ public class HerokuappStepDefinitions {
     public void delete_butonunun_gorunmedigini_test_eder() {
         try {
             Assert.assertTrue(herokuPage.deleteButonu.isDisplayed());
-        } catch (Exception e) {
+        } catch (NoSuchElementException e) {
+
             Assert.assertTrue(true);
         }
-
     }
 }
