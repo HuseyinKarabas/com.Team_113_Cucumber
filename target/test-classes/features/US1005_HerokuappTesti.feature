@@ -1,7 +1,8 @@
+
+
 Feature:US1005 Kullanici butonlari test eder
 
   Scenario: TC11 kullanici butonlari ve cikan yazilari test eder
-
 
    https://the-internet.herokuapp.com/add_remove_elements/ adresine gidin
     Given Kullanici "herokuUrl" anasayfaya gider
